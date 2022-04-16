@@ -1,0 +1,60 @@
+.navbar {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.nav-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.ul {
+  margin: 0 auto;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  list-style-type: none;
+  gap: 1rem;
+  font-weight: 500;
+  font-size: 1rem;
+  color: black;
+}
+.sign-in {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  &__h1 {
+    padding: 0 1rem;
+    display: inline-block;
+    font-size: 1rem;
+    color: black;
+    font-weight: 500;
+  }
+  &__span {
+    padding: 2px;
+
+    &-2,
+    &-4 {
+      color: red;
+    }
+  }
+}
+.bag {
+  display: flex;
+  justify-content: flex-end;
+}
+.cart__label {
+  display: inline-block;
+  padding: 1rem 0rem;
+  padding-left: 0.5rem;
+  color: black;
+  font-weight: 500;
+}
+.cart__price {
+  display: inline-block;
+  padding: 1rem 0rem;
+  padding-right: 2rem;
+  color: black;
+  font-weight: 500;
+  margin-right: 3rem;
+}

@@ -1,0 +1,47 @@
+.navbar2 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: rgb(57, 53, 53);
+
+  &__tittle {
+    text-transform: uppercase;
+    text-align: center;
+    letter-spacing: 0.5rem;
+    color: rgb(215, 50, 50);
+  }
+  &__items {
+    display: flex;
+    align-items: center;
+    color: white;
+    justify-content: center;
+
+    ul {
+      padding: 0;
+      list-style: none;
+      display: flex;
+      justify-content: flex-start;
+      li {
+        font-weight: 500;
+        padding: 0.5rem 1rem;
+      }
+    }
+  }
+  &__searchbar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  &__input {
+    color: wihte;
+    border: none;
+    border-radius: 100px;
+    height: 2rem;
+    width: 20rem;
+    background-color: rgb(171, 160, 160);
+    outline: none;
+    &::placeholder {
+      color: white;
+      padding-left: 1rem;
+    }
+  }
+}
