@@ -1,0 +1,50 @@
+.footerWrapper {
+	padding-top: 20px;
+}
+
+.footerDesktop {
+	display: flex;
+	justify-content: center;
+}
+
+.mainContent {
+	color: white;
+	.logo {
+		color: white;
+	}
+
+	.description {
+		font-family: 'Lab Grotesque';
+		font-style: normal;
+		font-weight: 600;
+		font-size: 22px;
+		line-height: 40px;
+		color: hsla(0, 0%, 100%, 0.8);
+		margin: 24px 0 32px;
+	}
+
+	& > div {
+		padding-bottom: 50px;
+	}
+
+	ul {
+		list-style: none;
+
+		li {
+			font-family: 'TT Commons';
+			font-style: normal;
+			font-weight: 500;
+			font-size: 14px;
+			line-height: 24px;
+			color: #7d94b2;
+			padding-bottom: 10px;
+
+			.openMenu {
+				display: none;
+			}
+		}
+		.halfList {
+			margin-top: 55px !important;
+		}
+	}
+}

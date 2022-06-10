@@ -1,0 +1,11 @@
+.pageContainer {
+	position: relative;
+	width: 100%;
+	// overflow: hidden;
+
+	& .pageHeader {
+		max-width: 1440px;
+		margin: auto;
+		width: 100%;
+	}
+}

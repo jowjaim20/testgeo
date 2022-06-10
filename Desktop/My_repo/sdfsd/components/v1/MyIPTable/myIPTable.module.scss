@@ -1,0 +1,19 @@
+
+.ipTable {
+  width: 100%;
+  .ipTitle {
+    text-transform: uppercase;
+    color: #EDEEFF;
+    margin-left: 10px;
+    font-weight: 100;
+  }
+  tbody tr:nth-child(even) {
+    background: #272956;
+  }
+  tbody tr:nth-child(odd) {
+    background: #1f2146;
+  }
+}
+
+
+

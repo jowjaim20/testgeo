@@ -1,0 +1,9 @@
+.scrollBar, .codesContainer {
+  & :global(.ps__rail-x) {
+    height: 7px ;
+  }
+
+  & :global(.ps__rail-x > .ps__thumb-x ) {
+    height: 3px;
+  }
+}

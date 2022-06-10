@@ -1,0 +1,47 @@
+.img {
+	width: 64px;
+	height: 64px;
+}
+
+.container {
+	background-color: transparent;
+}
+
+@media screen and (max-width: 768px) {
+	.container {
+		max-width: none;
+	}
+}
+
+.companySize > div {
+	svg {
+		position: absolute;
+		right: 25px;
+	}
+
+}
+
+.earningTitle {
+	color: #262b42;
+}
+
+.joinUs {
+	max-width: 507px;
+}
+
+.joinUsReason {
+	width: 23%;
+}
+
+
+@media screen and (max-width: 1232px) {
+	.joinUsReason {
+		width: 46%;
+	}
+}
+
+@media screen and (max-width: 962px) {
+	.joinUsReason {
+		width: 100%;
+	}
+}

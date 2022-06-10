@@ -1,0 +1,38 @@
+.ipWrapper {
+  display: flex;
+  color: #FFFFFF;
+  flex-direction: column;
+  .ipTitle {
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 24px;
+    margin-bottom: 5px;
+  }
+  .ip {
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 32px;
+    margin-bottom: 10px;
+  }
+  .copyBtn {
+    background-color: #393a5e;
+    color: #EDEEFF;
+    font-size: 16px;
+    width: 87px;
+
+    &:hover {
+      background-color: #393a5e;
+    }
+  }
+}
+
+@media screen and (max-width: 740px){
+  .ipWrapper {
+    word-break: break-all;
+    &:nth-child(2) {
+      margin-top: 30px;
+    }
+
+  }
+
+}

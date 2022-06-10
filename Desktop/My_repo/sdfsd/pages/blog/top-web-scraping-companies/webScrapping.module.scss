@@ -1,0 +1,9 @@
+.campanyContainer {
+	color: red;
+
+	&::-webkit-scrollbar {
+		display: none;
+	}
+
+	scroll-behavior: smooth;
+}

@@ -1,0 +1,45 @@
+.about {
+	position: relative;
+	.aboutContent {
+		width: 600px;
+	}
+	.description {
+		color: #c5d9fa;
+	}
+	.stat {
+	}
+	.statContainer {
+		display: flex;
+		justify-content: space-between;
+		margin-top: 80px;
+		margin-bottom: 80px;
+	}
+	.statDescription {
+		color: #617192;
+	}
+	.testimonialContainer {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		align-items: center;
+		flex-direction: column;
+		// width:100%;
+		.backgroundContainer {
+			position: relative;
+			width: 90%;
+			height: 400px;
+
+			.content {
+				color: white;
+				width: 528px;
+				position: absolute;
+				top: 50%;
+				left: 30%;
+				transform: translate(-50%, -50%);
+				z-index: 2;
+				padding: 20px;
+				text-align: left;
+			}
+		}
+	}
+}

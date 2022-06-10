@@ -1,0 +1,93 @@
+.container {
+	height: 100%;
+	margin: auto;
+
+	& .animationWrapper {
+		color: red;
+
+		[title='desktopAnimation'] {
+			box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+		}
+	}
+
+	& .ellipseOrange {
+		position: absolute;
+		width: 706px;
+		height: 567px;
+		background: linear-gradient(59.64deg, #ffdaab 36.7%, rgba(255, 218, 171, 0) 118.26%);
+	}
+
+	& .ellipseGreen {
+		position: absolute;
+		width: 617px;
+		height: 617px;
+		background: #d6f6e9;
+	}
+
+	& .ellipseViolet {
+		width: 542px;
+		height: 542px;
+		background: rgba(95, 109, 251, 0.2);
+	}
+
+	& .ellipseViolet2 {
+		width: 542px;
+		height: 542px;
+		background: rgba(95, 109, 251, 0.2);
+	}
+
+	& .headingContainer {
+		// & .headingPrimary {
+		// 	font-weight: 900;
+		// 	font-size: 60px;
+		// 	line-height: 60px;
+		// 	letter-spacing: -0.02em;
+		// 	color: #5b21b6;
+		// }
+
+		& .headingSecondarySub {
+			font-weight: normal;
+			font-size: 20px;
+			line-height: 28px;
+			color: #374151;
+		}
+
+		& .rating {
+			// & .ratingViewed {
+			// 	font-size: 14px;
+			// 	line-height: 20px;
+			// 	text-decoration-line: underline;
+			// }
+		}
+	}
+	.featureDivider {
+		position: absolute;
+		width: 2000px;
+		left: -35%;
+		top: 35%;
+	}
+	.featureDivider2 {
+		position: absolute;
+		width: 2000px;
+		left: -35%;
+		top: 90%;
+	}
+	.darkContainer {
+		position: relative;
+	}
+	.darkImageBackgroundContainer {
+		height: 2000px;
+		position: absolute;
+		// top: 35%;
+	}
+}
+
+@media screen and (min-width: 1500px) {
+	.container {
+		& .headingContainer {
+			:global(.biggerFont) {
+				font-size: 54px !important;
+			}
+		}
+	}
+}

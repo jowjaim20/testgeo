@@ -1,0 +1,163 @@
+html,
+body {
+	padding: 0;
+	margin: 0;
+	/* font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif; */
+	/* font-family: Lab Grotesque, sans-serif; */
+	font-family: 'Lab Grotesque' !important;
+}
+
+a {
+	color: inherit;
+	text-decoration: none;
+	color: purple;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+.carousel .slide {
+	background: transparent !important;
+}
+
+.carousel .control-dots .dot.selected,
+.carousel .control-dots .dot:hover {
+	opacity: 1 !important;
+	background: #c4c4c4 !important;
+}
+
+.carousel .control-dots .dot {
+	width: 12px !important;
+	height: 12px !important;
+	box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4) !important;
+	background: #e8e8e8 !important;
+}
+
+::-webkit-scrollbar-track {
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+	background-color: #f5f5f5;
+}
+
+::-webkit-scrollbar-thumb {
+	border-radius: 10px;
+	-webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+	background-color: darkgray;
+}
+
+* {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+svg {
+	height: 1em;
+}
+
+.black-friday-modal {
+	height: 452px;
+	width: 432px;
+	background: #ffffff;
+	border-radius: 10px;
+}
+
+.top {
+	position: relative;
+	height: 196px;
+	width: 432px;
+	background: url('/images/black_firday_back.svg');
+}
+
+.button {
+	height: 256px;
+	width: 432px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: space-evenly;
+	padding: 25px;
+
+	.title {
+		font-family: Lab Grotesque;
+		font-style: normal;
+		font-weight: 900;
+		font-size: 36px;
+		line-height: 40px;
+		/* identical to box height, or 111% */
+
+		text-align: center;
+
+		/* Secondary/200 */
+
+		color: #191d30;
+	}
+
+	.sub-title {
+		font-family: Lab Grotesque;
+		font-style: normal;
+		font-weight: 500;
+		font-size: 20px;
+		line-height: 28px;
+		/* identical to box height, or 140% */
+
+		text-align: center;
+
+		/* Secondary/50 */
+
+		color: #363c59;
+	}
+
+	a {
+		width: 100%;
+		.explore {
+			background: linear-gradient(270deg, #fe895e 0%, #ef5a92 100%);
+			border-radius: 5px;
+			font-family: 'Lab Grotesque';
+			font-style: normal;
+			width: 100%;
+			height: 60px;
+			font-size: 18px;
+			line-height: 20px;
+			font-weight: 600;
+			color: #ffffff;
+			margin-top: 20px;
+			padding: 0 20px;
+			text-transform: initial;
+		}
+	}
+}
+
+.global-maintenance-banner {
+	background-image: linear-gradient(rgb(158, 61, 255, 0.6), rgb(158, 61, 255, 1));
+}
+
+.global-maintenance-icon {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	background-color: rgb(255, 255, 255, 0.25);
+	border-radius: 8px;
+	padding: 13px;
+	padding-top: 10px;
+	margin-right: 16px;
+}
+
+.global-maintenance-icon img {
+	width: 18px;
+	height: 16px;
+}
+
+// :any-link {
+// 	color: red;
+// 	font-weight: 900;
+// 	text-decoration: none;
+// }
+
+// .blog-links a p {
+// 	color: purple !important;
+// }

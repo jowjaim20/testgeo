@@ -1,0 +1,21 @@
+.countryMain {
+	padding: 15px;
+	height: 70px;
+
+	.countrySub {
+		display: none;
+	}
+
+	&:hover {
+		.countrySub {
+			display: flex;
+		}
+	}
+}
+
+@media screen and (max-width: 690px) {
+	.countryMain {
+		height: 50px;
+		padding: 5px;
+	}
+}

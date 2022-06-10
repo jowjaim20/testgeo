@@ -1,0 +1,115 @@
+.geoSelectCountry {
+	width: 100%;
+
+	.svg-xl {
+		width: 28px;
+		height: 28px;
+	}
+	.svg-lg {
+		width: 16px;
+		height: 16px;
+	}
+	.svg-md {
+		width: 16px;
+		height: 16px;
+	}
+	.svg-sm {
+		width: 12px;
+		height: 12px;
+	}
+
+	.selected-country-icon {
+		img {
+			height: 24px;
+			border-radius: 4px;
+		}
+	}
+
+	& .selectCountry {
+		padding-bottom: 4px;
+		height: 38px;
+		// &-label {
+		// 	font-size: 16px;
+		// 	line-height: 24px;
+		// 	color: #ecf1f6;
+		// 	& label {
+		// 		font-size: 14px;
+		// 		color: #ecf1f6;
+		// 	}
+		// }
+
+		& button {
+			height: 100%;
+			width: 100%;
+			padding: 0;
+			border: none;
+
+			& span {
+				font-size: 14px;
+				color: #617192;
+
+				& span {
+					color: #edeeef;
+				}
+			}
+
+			&[aria-expanded='true']::after {
+				border-top: 0;
+				border-bottom: 5px solid #7d94b2;
+			}
+
+			&::after {
+				border-top: 5px solid #7d94b2;
+			}
+
+			&:focus-visible {
+				outline: none;
+			}
+		}
+
+		& ul {
+			background-color: #0d1020;
+			border: none;
+
+			& li {
+				&:hover {
+					background: #131728;
+				}
+			}
+		}
+
+		&.select {
+			&-xl {
+				height: 60px;
+				padding: 4px 12px;
+				& svg {
+					@extend .svg-xl;
+				}
+			}
+			&-lg {
+				height: 48px;
+				padding: 4px 8px;
+
+				& svg {
+					@extend .svg-lg;
+				}
+			}
+			&-md {
+				height: 40px;
+				padding: 4px 8px;
+
+				& svg {
+					@extend .svg-md;
+				}
+			}
+			&-sm {
+				height: 32px;
+				padding: 2px 4px;
+
+				& svg {
+					@extend .svg-sm;
+				}
+			}
+		}
+	}
+}

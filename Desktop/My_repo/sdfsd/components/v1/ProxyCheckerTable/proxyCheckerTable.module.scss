@@ -1,0 +1,224 @@
+.freeProxyBlock {
+  background: #181a40;
+  z-index: 1;
+  color: white;
+  font-family: 'Space Mono', monospace;
+  border-radius: 8px;
+  width: 100%;
+
+  .tableFooter {
+    display: flex;
+    align-items: center;
+    background: rgba(22, 22, 23, 0.8);
+    padding: 17px 24px 17px 24px;
+    color: #9D9EAA;
+  }
+
+  .testResult {
+    margin:  0 20px 0 20px;
+    .testResultTitle {
+      font-weight: 600;
+      font-size: 27px;
+      margin-bottom: 16px;
+    }
+    .resultWrapper {
+      font-family: 'Space Mono', monospace;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .progress {
+      width: 100%;
+      margin-top: 20px;
+      background: #2C2F4C;
+      height: 8px;
+      .progressBar {
+        height: inherit;
+        background: linear-gradient(270deg, #FE895E 0%, #EF5A92 100%);
+      }
+    }
+  }
+
+  .freeProxyTable {
+    text-align: left;
+    box-shadow: 0px 54px 50px rgba(67, 67, 68, 0.0705882);
+
+    tbody tr:nth-child(even) {
+      background: #272956;
+    }
+
+    .tableHeader {
+      background-color: #17182c;
+      display: contents;
+    }
+
+    .tableHeaderMobile {
+      display: none;
+      background-color: #17182c;
+    }
+
+    button {
+      background-color: #1f2146;
+    }
+
+    .freeProxyTableRowTitle {
+      width: 12%;
+      padding: 6px 0 6px 16px;
+      white-space: nowrap;
+      background: #1e1f36;
+      outline: none;
+      font-weight: bold;
+      color: #A5A5A5;
+      text-align: center;
+      text-transform: uppercase;
+      font-size: 15px;
+    }
+
+    .freeProxyTableItem {
+      font-size: 15px;
+      line-height: 17px;
+
+      .freeProxyTableRow {
+        padding: 13px;
+        height: 54px;
+        text-align: center;
+        color: #BFD0FF;
+      }
+    }
+
+    .noResults {
+      color: #BFD0FF;
+      font-size: 15px;
+      text-align: center;
+      padding: 17px 0 17px 0;
+    }
+  }
+}
+
+.exportPaginationWrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: rgba(22, 22, 23, 0.8);
+  margin: 35px 0 0 0;
+  padding: 17px 24px 17px 24px;
+  color: #9D9EAA;
+
+  select {
+    appearance: none;
+    background-color: #181a40;
+    min-width: 45px;
+    color: #FEC900;
+    font-size: 16px;
+    border: none;
+    font-family: 'Space Mono', monospace;
+    margin: 0 27px 0 18px;
+
+    &:focus,
+    &:active {
+      border: none;
+      outline: none;
+    }
+  }
+
+  .exportWrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+  }
+
+  .perPageContanter {
+    position: relative;
+    display: flex;
+    margin-top: 15px;
+    flex-wrap: wrap;
+  }
+}
+
+.tableResponsive {
+  overflow-x: scroll;
+}
+
+.tableResponsive::-webkit-scrollbar {
+  width: 8px;
+}
+
+.tableResponsive::-webkit-scrollbar-thumb {
+  background: #303266;
+  box-shadow: inset 0 0 5px #181935;
+}
+
+.tableResponsive::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px #383979;
+  background: #535691;
+}
+
+.exportPaginationWrapper {
+  input {
+    opacity: 0;
+    position: fixed;
+    width: 0;
+    color: #F5F6FA;
+
+    &:focus+label {
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(154.49deg, rgba(121, 117, 131, 0.2) 5.35%, rgba(54, 53, 103, 0.2) 83.85%), rgba(49, 48, 54, 0.3);
+    }
+
+    &:checked+label {
+      font-weight: bold;
+      color: white;
+      background: linear-gradient(154.49deg, rgba(121, 117, 131, 0.2) 5.35%, rgba(54, 53, 103, 0.2) 83.85%), rgba(49, 48, 54, 0.3);
+    }
+  }
+}
+
+.exportPaginationWrapper {
+  .exportContainer {
+    label {
+      display: inline-block;
+      padding: 10px 20px;
+      font-family: sans-serif, Arial;
+      background: linear-gradient(154.49deg, rgba(121, 117, 131, 0.2) 5.35%, rgba(54, 53, 103, 0.2) 83.85%), #282851;
+      font-size: 16px;
+    }
+  }
+}
+
+@media screen and (max-width: 935px) {
+  .exportPaginationWrapper {
+    flex-direction: column;
+    align-items: baseline;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .freeProxyBlock {
+    .testResult {
+      .resultWrapper {
+        flex-direction: column;
+        .validStats {
+          margin-top: 20px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 460px) {
+  .exportPaginationWrapper {
+    background-color: #1f2146;
+    padding: 17px 5px 17px 5px;
+
+    .exportWrapper {
+      flex-direction: column;
+    }
+
+    .exportTitle {
+      width: 100%;
+      padding-left: 30px;
+      margin-bottom: 15px;
+    }
+  }
+}

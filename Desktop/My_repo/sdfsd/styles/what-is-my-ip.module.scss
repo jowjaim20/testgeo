@@ -1,0 +1,163 @@
+.homepage {
+	overflow-x: hidden;
+	position: relative;
+	.ipContainer {
+		display: flex;
+		max-width: 1385px;
+		background-color: #212248;
+		padding: 24px 155px 24px 155px;
+		margin: 0 auto;
+		margin-bottom: 40px;
+		justify-content: space-between;
+	}
+	.tablesContainer {
+		// padding: 0px 155px 0px 155px;
+		.firstTable {
+			display: flex;
+			margin-bottom: 65px;
+			.mapBlock {
+				width: 75%;
+				background: lightblue;
+				margin-left: 30px;
+				margin-top: 38px;
+			}
+		}
+	}
+	.section1 {
+		position: relative;
+		.container {
+			margin: 0 auto;
+			max-width: 1289px;
+			align-items: flex-start;
+			.mainContent {
+				display: flex;
+				flex-direction: column;
+				align-items: center;
+				position: relative;
+				.title {
+					font-weight: 600;
+					font-size: 32px;
+					line-height: 72px;
+					color: white;
+					font-family: 'Lab Grotesque';
+					letter-spacing: 0.2px;
+					padding-bottom: 10px;
+					margin: 0;
+				}
+				.trialTxt {
+					font-family: 'Lab Grotesque';
+					font-style: normal;
+					font-weight: 400;
+					font-size: 16px;
+					line-height: 22px;
+					color: #ddfff3;
+					opacity: 0.7;
+				}
+			}
+		}
+	}
+
+	.boldTxt {
+		font-weight: bold;
+	}
+}
+
+/* MEDIA QUERIES */
+
+@media screen and (max-width: 1380px) {
+	.homepage {
+		.section1 {
+			.container {
+				width: 100%;
+				padding-left: 42px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 1330px) {
+	.homepage {
+		.tablesContainer {
+			padding: 0px 40px 0px 40px;
+		}
+	}
+}
+
+@media screen and (max-width: 1055px) {
+	.homepage {
+		.ipContainer {
+			padding: 24px 30px 24px 30px;
+		}
+	}
+}
+
+@media screen and (max-width: 740px) {
+	.homepage {
+		.ipContainer {
+			flex-direction: column;
+			&:nth-child(odd) {
+				margin-top: 30px;
+			}
+		}
+		.tablesContainer {
+			.firstTable {
+				flex-direction: column;
+				.mapBlock {
+					height: 400px;
+					margin-left: 0px;
+					width: 100%;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 530px) {
+	.homepage {
+		.tablesContainer {
+			padding: 0 5px;
+		}
+	}
+}
+
+@media screen and (max-width: 415px) {
+	.homepage {
+		.section1 {
+			.container {
+				padding-left: 20px;
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 380px) {
+	.homepage {
+		.tablesContainer {
+			.firstTable {
+				.mapBlock {
+					height: 300px;
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 332px) {
+	.tableScroll {
+		overflow-x: scroll;
+	}
+
+	.tableScroll::-webkit-scrollbar {
+		width: 8px;
+	}
+
+	.tableScroll::-webkit-scrollbar-thumb {
+		background: #303266;
+		box-shadow: inset 0 0 5px #181935;
+	}
+
+	.tableScroll::-webkit-scrollbar-track {
+		box-shadow: inset 0 0 5px #383979;
+		background: #535691;
+	}
+}

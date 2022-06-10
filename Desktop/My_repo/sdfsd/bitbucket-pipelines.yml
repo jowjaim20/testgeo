@@ -1,0 +1,33 @@
+pipelines:
+  branches:
+    website-v2:
+      - step:
+          name: "Staging Deployment"
+          image: node:14.18.1
+          script:
+            - mkdir -p ~/.ssh
+            - ssh-keyscan -t rsa $SSH_HOST_STAGING > deploy_known_hosts
+            - cat deploy_known_hosts >> ~/.ssh/known_hosts
+            - (umask  077 ; echo $DEPLOY_SSH_KEY_STAGING | base64 -di > ~/.ssh/id_rsa)
+            - npm i
+            - npm run build-html
+            - ssh -i ~/.ssh/id_rsa $SSH_USER@$SSH_HOST_STAGING 'cd /var/www/geonode-website/ && rm -rf $(ls -A)'
+            - scp -i ~/.ssh/id_rsa -r ./out/* $SSH_USER@$SSH_HOST_STAGING:/var/www/geonode-website
+    master:
+      - step:
+          name: "Production Deployment"
+          image: node:14.18.1
+          script:
+            - mkdir -p ~/.ssh
+            - ssh-keyscan -t rsa $SSH_HOST_PROD > deploy_known_hosts
+            - cat deploy_known_hosts >> ~/.ssh/known_hosts
+            - (umask  077 ; echo $DEPLOY_SSH_KEY_PROD | base64 -di > ~/.ssh/id_rsa)
+            - npm i
+            - npm run build-html
+            - ssh -i ~/.ssh/id_rsa $SSH_USER@$SSH_HOST_PROD 'cd /var/www/geonode-website/ && rm -rf $(ls -A)'
+            - scp -i ~/.ssh/id_rsa -r ./out/* $SSH_USER@$SSH_HOST_PROD:/var/www/geonode-website
+
+definitions:
+  services:
+    docker:
+      memory: 7128

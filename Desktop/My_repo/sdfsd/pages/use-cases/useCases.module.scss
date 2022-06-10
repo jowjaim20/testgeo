@@ -1,0 +1,12 @@
+.buttonContainer {
+  flex-direction: row;
+}
+
+@media screen and (max-width: 350px) {
+  .buttonContainer {
+    flex-direction: column;
+    a {
+      margin-bottom: 10px;
+    }
+  }
+}

@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://geonode.com/
+
+# Sitemaps
+Sitemap: https://geonode.com/sitemap.xml

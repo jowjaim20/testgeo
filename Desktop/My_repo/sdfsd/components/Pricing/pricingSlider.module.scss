@@ -1,0 +1,37 @@
+.container {
+	/* white */
+	// width: 920px;
+	// border-radius: 8px;
+	// background: #FFFFFF;
+	// border-radius: 8px;
+	// padding-bottom: 20px;
+	// padding-top: 20px;
+	.tabContainer {
+		//         display: flex;
+		//         justify-content: center;
+	}
+	.tabs {
+		align-items: center;
+		width: 824px;
+		border-radius: 8px;
+		padding: 6px;
+		justify-content: center;
+		.tab {
+			width: 100%;
+			text-align: center;
+			padding: 13px;
+			border-radius: 6px;
+		}
+	}
+	.sliderContainer {
+		width: 824px;
+		margin: auto;
+		margin-bottom: 70px;
+	}
+
+	:global {
+		.rc-slider-mark {
+			top: -30px;
+		}
+	}
+}
